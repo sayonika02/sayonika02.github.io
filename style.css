@@ -1,29 +1,59 @@
-/* Reset and base styles */
 body {
-  margin: 0;
   font-family: Arial, sans-serif;
-  color: #222;
-  background-color: #f7f9fc;
+  margin: 0;
+  background-color: #f2f2f2;
+  color: #333;
 }
 
-/* Header (Blue region) */
 .hero {
   background-color: #e0f0ff;
-  padding: 2rem;
   text-align: center;
+  padding: 2rem;
 }
 
 .profile-pic {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
+  border-radius: 50%;
   margin-bottom: 1rem;
 }
 
-/* Main content background image */
+h1 {
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-top: 0;
+}
+
+.social-icons {
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+.social-icons img {
+  width: 28px;
+  height: 28px;
+  filter: brightness(0.2);
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+.social-icons a:hover img {
+  filter: brightness(0) saturate(100%) invert(32%) sepia(90%) saturate(745%) hue-rotate(182deg) brightness(95%) contrast(88%);
+}
+
 main {
-  background-image: url("background.jpg");
+  background-image: url("background.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -31,27 +61,18 @@ main {
   position: relative;
 }
 
-/* Section styling (with white semi-transparent tile look) */
 .section {
   background-color: rgba(255, 255, 255, 0.85);
+  margin: 1rem auto;
+  padding: 1rem 2rem;
   border-radius: 12px;
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, opacity 0.3s;
-  opacity: 0;
-  transform: translateY(20px);
+  max-width: 800px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Scroll-in animation */
-.section.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Footer */
 footer {
-  padding: 2rem;
   text-align: center;
-  background-color: #f0f0f0;
+  padding: 1.5rem;
+  background-color: #fafafa;
+  font-size: 0.95rem;
 }
