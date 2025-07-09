@@ -7,58 +7,34 @@
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <header class="hero">
-    <img src="Sayonika.jpeg" alt="Profile Picture" class="profile-pic"/>
-    <h1>Hello, I'm Sayonika</h1>
-    <p>Incoming MSCS student at UW–Madison | Curious about bridging the gap between Systems and AI</p>
+  <div class="container">
+    <aside class="sidebar">
+      <img src="Sayonika.jpeg" alt="Profile Picture" class="profile-pic"/>
+      <h1>Hello, I'm Sayonika</h1>
+      <p>Incoming MSCS student at UW–Madison<br />Curious about bridging the gap between Systems and AI</p>
+      <div class="social-icons">
+        <a href="mailto:dassayonika@gmail.com" title="Email" target="_blank">
+          <img src="https://img.icons8.com/material-outlined/24/ffffff/filled-message.png" alt="Email">
+        </a>
+        <a href="https://www.linkedin.com/in/sayonika-das/" title="LinkedIn" target="_blank">
+          <img src="https://img.icons8.com/ios-filled/24/ffffff/linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/sayonika02" title="GitHub" target="_blank">
+          <img src="https://img.icons8.com/ios-glyphs/24/ffffff/github.png" alt="GitHub">
+        </a>
+        <a href="https://scholar.google.com/citations?user=kq0Y_2sAAAAJ" title="Google Scholar" target="_blank">
+          <img src="https://img.icons8.com/ios-filled/24/ffffff/google-scholar.png" alt="Google Scholar">
+        </a>
+      </div>
+    </aside>
 
-    <div class="social-icons">
-      <a href="mailto:dassayonika@gmail.com" title="Email" target="_blank">
-        <img src="https://img.icons8.com/material-outlined/24/000000/filled-message.png" alt="Email">
-      </a>
-      <a href="https://www.linkedin.com/in/sayonika-das/" title="LinkedIn" target="_blank">
-        <img src="https://img.icons8.com/ios-filled/24/000000/linkedin.png" alt="LinkedIn">
-      </a>
-      <a href="https://github.com/sayonika02" title="GitHub" target="_blank">
-        <img src="https://img.icons8.com/ios-glyphs/24/000000/github.png" alt="GitHub">
-      </a>
-      <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=kq0Y_2sAAAAJ" title="Google Scholar" target="_blank">
-        <img src="https://img.icons8.com/ios-filled/24/000000/google-scholar.png" alt="Google Scholar">
-      </a>
-    </div>
-  </header>
+    <main class="content">
+      <div class="tabs">
+        <button class="tab-button active" data-tab="about">About Me</button>
+        <button class="tab-button" data-tab="interests">Personal Interests</button>
+        <button class="tab-button" data-tab="news">Latest News</button>
+      </div>
 
-  <main>
-    <section class="section">
-      <h2>About Me</h2>
-      <p>I’m passionate about building resilient systems and exploring the intersection of technology and people. In my free time, I enjoy music, nature walks, and designing digital spaces.</p>
-    </section>
-
-    <section class="section">
-      <h2>Personal Interests</h2>
-      <ul>
-        <li>Generative AI & NLP</li>
-        <li>System Design</li>
-        <li>Photography</li>
-        <li>Weight Training</li>
-      </ul>
-    </section>
-
-    <section class="section">
-      <h2>Latest News</h2>
-      <ul>
-        <li>🎓 Accepted to UW–Madison MSCS, Fall 2025</li>
-        <li>🎤 Gave a talk on GenAI at HPE FDP</li>
-        <li>📸 Posted a new photo set from Nandi Hills</li>
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    <h2>Connect With Me</h2>
-    <a href="https://www.linkedin.com/in/sayonika-das/" target="_blank">LinkedIn</a> |
-    <a href="https://github.com/sayonika02" target="_blank">GitHub</a> |
-    <a href="mailto:dassayonika@gmail.com">Email</a>
-  </footer>
-</body>
-</html>
+      <section id="about" class="tab-content active">
+        <h2>About Me</h2>
+        <p>I’m passionate about building resilient systems and exploring the intersection of technology and people. In my free time, I enjoy music, nature walks, and de

@@ -1,22 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const sections = document.querySelectorAll('.section');
+  const tabButtons = document.querySelectorAll('.tab-button');
+  const tabContents = document.querySelectorAll('.tab-content');
 
-  function checkVisibility() {
-    const triggerBottom = window.innerHeight * 0.8;
+  tabButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const tab = button.getAttribute('data-tab');
 
-    sections.forEach(section => {
-      const sectionTop = section.getBoundingClientRect().top;
-      if (sectionTop < triggerBottom) {
-        section.classList.add('visible');
-      } else {
-        section.classList.remove('visible');
-      }
+      tabButtons.forEach(btn => btn.classList.remove('active'));
+      tabContents.forEach(content => content.classList.remove('active'));
+
+      button.classList.add('active');
+      document.getElementById(tab).classList.add('active');
     });
-  }
-
-  // Initial check
-  checkVisibility();
-
-  // On scroll
-  window.addEventListener('scroll', checkVisibility);
+  });
 });
